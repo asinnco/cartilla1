@@ -8,7 +8,7 @@ function inicia(){
    else{horaInicio=data.getHours() +":"+data.getMinutes()+" h";}
    taboaIntentos=new Array();
    menuLateral='';
-   menuActividades='<h1></h1><a href=\"javascript:irA(0)\" title=\"CARTILLA\">1 </a><a href=\"javascript:irA(1)\" title=\"ROMPECABEZA\">2 </a><a href=\"javascript:irA(2)\" title=\"RELACION\">3 </a>';
+   menuActividades='<h1>MAS ACTIVIDADES</h1><a href=\"javascript:irA(0)\" title=\"CARTILLA\">1 </a><a href=\"javascript:irA(1)\" title=\"ROMPECABEZA\">2 </a><a href=\"javascript:irA(2)\" title=\"RELACION\">3 </a>';
    if (window.opener == null){
       indice=0;
       }else{
@@ -20,9 +20,9 @@ function inicia(){
    }
    maxIndice=2;
 	taboaContidos=new Array();
-taboaContidos[0]=new act("CARTILLA","CARTILLA","","<object width='100%' height='800' type='text/html' data='CARTLLA1/index.htm'></object>",true,"",true,false,false);
-taboaContidos[1]=new act("ROMPECABEZA","ROMPECABEZA","","<object width='100%' height='520' type='text/html' data='ONU/index.htm'></object>",true,"",true,false,false);
-taboaContidos[2]=new act("RELACION","RELACION","","<object width='100%' height='530' type='text/html' data='rela/index.htm'></object>",true,"",true,false,false);
+taboaContidos[0]=new act("CARTILLA","CARTILLA","","<object width='100%' height='800' type='text/html' data='CARTLLA1/index.htm'></object>",true,"",true,true,true);
+taboaContidos[1]=new act("ROMPECABEZA","ROMPECABEZA","","<object width='100%' height='520' type='text/html' data='ONU/index.htm'></object>",true,"",true,true,true);
+taboaContidos[2]=new act("RELACION","RELACION","","<object width='100%' height='530' type='text/html' data='rela/index.htm'></object>",true,"",true,true,true);
 document.getElementById("botonAdiante").href="javascript:avanza()";
 document.getElementById("botonAtras").href="javascript:retrocede()";
 document.getElementById("botonAxuda").target="_blank";
